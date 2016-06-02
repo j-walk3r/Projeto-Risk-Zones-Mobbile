@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Projeto_Risk_Zones_Mobile</string>
+    <string name="title_activity_home_map">Home</string>
 </resources>

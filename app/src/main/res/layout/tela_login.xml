@@ -3,4 +3,77 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+         <ImageView
+             android:src="@mipmap/ic_launcher"
+             android:layout_marginTop="50dp"
+             android:layout_marginBottom="20dp"
+             />
+
+          <android.support.v7.widget.AppCompatEditText
+              android:id="@+id/edtEmail"
+              android:layout_height="45dp"
+              android:hint="E-mail"
+              android:gravity="center"
+              android:layout_marginTop="30dp"
+              android:layout_marginLeft="30dp"
+              android:layout_marginRight="30dp"
+              android:textColorHint="#5f66a4"
+              android:inputType="textEmailAddress"
+              />
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edtSenha"
+                android:layout_height="45dp"
+                android:hint="Senha"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColorHint="#5f66a4"
+                android:inputType="textPassword"
+                />
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btEntrar"
+                android:layout_marginTop="30dp"
+                android:layout_height="70dp"
+                android:background="#f45"
+                android:text="Entrar"
+                android:onClick="getLogin"
+                />
+            <LinearLayout>
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:id="@+id/linkNovoUser"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="10dp"
+                        android:layout_height="20dp"
+                        android:text="Inscrever-se"
+                        android:textSize="17dp"
+                        android:layout_gravity="left"
+                        android:textColor="#55f"
+                        android:layout_marginLeft="140dp"/>
+                    <ImageButton
+                        android:id="@+id/btEntrarFacebook"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/btfacebook"
+                        android:layout_gravity="left"
+                        android:layout_height="wrap_content"
+                        android:layout_width="48dp"
+                        android:background="#fff"/>
+                </TableLayout>
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
 </LinearLayout>
